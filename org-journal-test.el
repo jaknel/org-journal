@@ -10,7 +10,7 @@
 (require 'ert)
 (require 'org-journal)
 
-(defvar org-journal-dir-test "/tmp/org-journal")
+(defvar org-journal-dir-test (make-temp-file "org-journal-" t))
 
 (defun org-journal-dir-test-setup ()
   "Create temporary directory."
